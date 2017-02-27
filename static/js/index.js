@@ -24,6 +24,10 @@ var $post = $('.post'),
         		$(this).addClass("oneOff")
         })
 
+        /* Pick a random one to set another color */
+        $($postholder.get(Math.floor(Math.random() * $postholder.length)))
+                .removeClass("oneOff").addClass("randShow");
+
         $postafter.each(function (e) {
         	var bg = $(this).parent().css('background-color')
         	$(this).css('border-top-color', bg)

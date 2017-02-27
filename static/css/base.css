@@ -2086,11 +2086,15 @@ ul li {
 .post-holder {
   width: 100%;
   height: 100%;
-  background: #f2efe8;
+  background: #f8f5ee;
   position: relative; }
 
 .oneOff {
   background: #6bb7bf;
+  color: #fff; }
+
+.randShow {
+  background: #769cac;
   color: #fff; }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -2144,7 +2148,7 @@ a.fn-item.active {
   height: 0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-  border-top: 50px solid #f2efe8;
+  border-top: 50px solid #f8f5ee;
   border-radius: 25px; }
 
 .post-title {
