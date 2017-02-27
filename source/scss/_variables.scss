@@ -12,15 +12,15 @@ $red:               #E25440;
 $slate:             #3D4260;
 
 $primary-color:     #f2efe8;
-$secondary-color:   #5BA4E5;
+$secondary-color:   #6bb7bf;
 
 $link-color:        #9FD067;
 $hover-color:       darken($link-color, 5%);
 
-$sans-font:         'Impact', sans-serif;
+$sans-font:         "Helvetica Neue","Source Sans Pro","Noto Sans",source-sans-pro,"Segoe UI",Helvetica,Arial,DengXian,"Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Source Han Sans","Microsoft Yahei",STHeiti,STXihei,"Heiti SC",Hei,"Hiragino Sans GB",SimHei,sans-serif;
 $serif-font:        'Times New Roman', serif;
-$monospace-font : 'Lucida Console', monospace, sans-serif;
+$monospace-font : "Source Code Pro",source-code-pro,Monaco,Consolas,Menlo,'Lucida Console',monospace,sans-serif;
 
-$header-font-color: white;
-$primary-font-color: black;
+$header-font-color: $gray-lightest;
+$primary-font-color: $gray-darkest;
 $secondary-font-color: #fff;

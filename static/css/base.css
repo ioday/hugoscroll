@@ -1730,16 +1730,16 @@ table {
 html {
   height: 100%;
   max-height: 100%;
-  font-size: 67,5%;
+  font-size: 80%;
   overflow-x: hidden; }
 
 body {
   height: 100%;
   max-height: 100%;
-  font-family: "Times New Roman", serif;
+  font-family: "Helvetica Neue", "Source Sans Pro", "Noto Sans", source-sans-pro, "Segoe UI", Helvetica, Arial, DengXian, "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Source Han Sans", "Microsoft Yahei", STHeiti, STXihei, "Heiti SC", Hei, "Hiragino Sans GB", SimHei, sans-serif;
   font-size: 1.5rem;
   line-height: 1.6em;
-  color: black; }
+  color: #333333; }
 
 a.fa {
   text-decoration: none; }
@@ -1769,13 +1769,13 @@ h4, h5, h6 {
   line-height: 1;
   margin-top: 0;
   margin-bottom: 10px;
-  font-family: "Impact", sans-serif; }
+  font-family: "Helvetica Neue", "Source Sans Pro", "Noto Sans", source-sans-pro, "Segoe UI", Helvetica, Arial, DengXian, "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Source Han Sans", "Microsoft Yahei", STHeiti, STXihei, "Heiti SC", Hei, "Hiragino Sans GB", SimHei, sans-serif; }
 
 h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   line-height: 120%;
   margin-top: 0;
-  font-family: "Impact", sans-serif;
+  font-family: "Helvetica Neue", "Source Sans Pro", "Noto Sans", source-sans-pro, "Segoe UI", Helvetica, Arial, DengXian, "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Source Han Sans", "Microsoft Yahei", STHeiti, STXihei, "Heiti SC", Hei, "Hiragino Sans GB", SimHei, sans-serif;
   margin-bottom: 0%; }
 
 h1 {
@@ -1816,7 +1816,7 @@ a.btn {
   background-color: #9FD067;
   border-radius: 6px;
   -webkit-border-radius: 6px;
-  color: white;
+  color: #F8F8F8;
   display: inline-block;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1924,13 +1924,13 @@ mark {
 
 code, tt {
   padding: 3px 5px;
-  font-family: monospace, sans-serif;
+  font-family: "Source Code Pro", source-code-pro, Monaco, Consolas, Menlo, "Lucida Console", monospace, sans-serif;
   font-size: 0.75em;
   /*white-space: pre;*/
   border: 1px solid #E3EDF3;
   background: #F7FAFB;
   border-radius: 2px;
-  color: black; }
+  color: #333333; }
 
 pre {
   -moz-box-sizing: border-box;
@@ -1939,7 +1939,7 @@ pre {
   border: 1px solid #E3EDF3;
   width: 100%;
   padding: 10px;
-  font-family: monospace, sans-serif;
+  font-family: "Source Code Pro", source-code-pro, Monaco, Consolas, Menlo, "Lucida Console", monospace, sans-serif;
   font-size: 0.9em;
   white-space: pre;
   overflow: auto;
@@ -2051,8 +2051,8 @@ ul li {
   height: 100%;
   margin-bottom: 0rem;
   text-align: center;
-  color: white;
-  background: #0099cc no-repeat center center;
+  color: #F8F8F8;
+  background: black no-repeat center center;
   background-size: cover; }
 
 #blog-logo img {
@@ -2080,7 +2080,7 @@ ul li {
   font-size: 1.8rem;
   line-height: 1.5em;
   font-weight: 300;
-  font-family: "Times New Roman", serif;
+  font-family: "Helvetica Neue", "Source Sans Pro", "Noto Sans", source-sans-pro, "Segoe UI", Helvetica, Arial, DengXian, "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Source Han Sans", "Microsoft Yahei", STHeiti, STXihei, "Heiti SC", Hei, "Hiragino Sans GB", SimHei, sans-serif;
   letter-spacing: 0; }
 
 .post-holder {
@@ -2090,7 +2090,7 @@ ul li {
   position: relative; }
 
 .oneOff {
-  background: #5BA4E5;
+  background: #6bb7bf;
   color: #fff; }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -2114,7 +2114,7 @@ ul li {
   top: 40px;
   left: 2%;
   z-index: 99999;
-  font-family: "Impact", sans-serif;
+  font-family: "Helvetica Neue", "Source Sans Pro", "Noto Sans", source-sans-pro, "Segoe UI", Helvetica, Arial, DengXian, "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Source Han Sans", "Microsoft Yahei", STHeiti, STXihei, "Heiti SC", Hei, "Hiragino Sans GB", SimHei, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   line-height: 130%;
@@ -2148,10 +2148,20 @@ a.fn-item.active {
   border-radius: 25px; }
 
 .post-title {
-  margin: 0; }
+  margin: 0;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background: transparent;
+  border-bottom: 1px dotted black;
+  padding: 5px 2px 0 2px; }
 
 .post-title a {
   text-decoration: none; }
+
+.post-title a.logo-up {
+  font-size: 0.5em; }
 
 .post-excerpt p {
   margin: 1.6rem 0 0 0;
@@ -2161,7 +2171,7 @@ a.fn-item.active {
 .post-meta {
   display: inline-block;
   margin: 0 0 5px 0;
-  font-family: "Impact", sans-serif;
+  font-family: "Helvetica Neue", "Source Sans Pro", "Noto Sans", source-sans-pro, "Segoe UI", Helvetica, Arial, DengXian, "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Source Han Sans", "Microsoft Yahei", STHeiti, STXihei, "Heiti SC", Hei, "Hiragino Sans GB", SimHei, sans-serif;
   font-size: 1.5rem;
   color: #9EABB3; }
 
@@ -2291,7 +2301,7 @@ a.fn-item.active {
   width: 80%;
   max-width: 700px;
   margin: 4rem auto;
-  font-family: "Impact", sans-serif;
+  font-family: "Helvetica Neue", "Source Sans Pro", "Noto Sans", source-sans-pro, "Segoe UI", Helvetica, Arial, DengXian, "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Source Han Sans", "Microsoft Yahei", STHeiti, STXihei, "Heiti SC", Hei, "Hiragino Sans GB", SimHei, sans-serif;
   font-size: 1.3rem;
   color: #9EABB3;
   text-align: center; }
@@ -2331,7 +2341,7 @@ a.fn-item.active {
   position: relative;
   margin: 0rem 0 0 0;
   padding: 1rem 0;
-  font-family: "Impact", sans-serif;
+  font-family: "Helvetica Neue", "Source Sans Pro", "Noto Sans", source-sans-pro, "Segoe UI", Helvetica, Arial, DengXian, "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Source Han Sans", "Microsoft Yahei", STHeiti, STXihei, "Heiti SC", Hei, "Hiragino Sans GB", SimHei, sans-serif;
   font-size: 1.3rem;
   line-height: 1.5em;
   color: #BBC7CC;
@@ -2572,5 +2582,72 @@ a.fn-item.active {
    End of file. Media queries should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
+.twa {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1em 1em; }
+
+.twa-lg {
+  height: 1.33em;
+  width: 1.33em;
+  margin: 0 0.0665em 0 0.133em;
+  vertical-align: -0.133em;
+  background-size: 1.33em 1.33em; }
+
+.twa-2x {
+  height: 2em;
+  width: 2em;
+  margin: 0 0.1em 0 0.2em;
+  vertical-align: -0.2em;
+  background-size: 2em 2em; }
+
+.twa-3x {
+  height: 3em;
+  width: 3em;
+  margin: 0 0.15em 0 0.3em;
+  vertical-align: -0.3em;
+  background-size: 3em 3em; }
+
+.twa-4x {
+  height: 4em;
+  width: 4em;
+  margin: 0 0.2em 0 0.4em;
+  vertical-align: -0.4em;
+  background-size: 4em 4em; }
+
+.twa-5x {
+  height: 5em;
+  width: 5em;
+  margin: 0 0.25em 0 0.5em;
+  vertical-align: -0.5em;
+  background-size: 5em 5em; }
+
+.twa-turtle {
+  background-image: url("//twemoji.maxcdn.com/svg/1f422.svg"); }
+
+.twa-tropical-fish {
+  background-image: url("//twemoji.maxcdn.com/svg/1f420.svg"); }
+
+.twa-fish {
+  background-image: url("//twemoji.maxcdn.com/svg/1f41f.svg"); }
+
+.twa-whale {
+  background-image: url("//twemoji.maxcdn.com/svg/1f433.svg"); }
+
+.twa-dolphin {
+  background-image: url("//twemoji.maxcdn.com/svg/1f42c.svg"); }
+
+.twa-blowfish {
+  background-image: url("//twemoji.maxcdn.com/svg/1f421.svg"); }
+
+.twa-beta {
+  font-size: 0.6em;
+  vertical-align: 2.6em;
+  color: #737373; }
 
 /*# sourceMappingURL=base.css.map */

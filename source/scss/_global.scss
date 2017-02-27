@@ -5,14 +5,14 @@
 html {
     height: 100%;
     max-height: 100%;
-    font-size: 67,5%;
+    font-size: 80%;
     overflow-x: hidden;
 }
 
 body {
     height: 100%;
     max-height: 100%;
-    font-family: $serif-font;
+    font-family: $sans-font;
     font-size: 1.5rem;
     line-height: 1.6em;
     color: $primary-font-color;
@@ -227,7 +227,7 @@ mark {
 
 code, tt {
     padding: 3px 5px;
-    font-family: monospace, sans-serif;
+    font-family: $monospace-font;
     font-size: 0.75em;
     /*white-space: pre;*/
     border: 1px solid #E3EDF3;
@@ -243,7 +243,7 @@ pre {
     border: 1px solid #E3EDF3;
     width: 100%;
     padding: 10px;
-    font-family: monospace, sans-serif;
+    font-family: $monospace-font;
     font-size: 0.9em;
     white-space: pre;
     overflow: auto;
@@ -376,7 +376,7 @@ ul li {
     margin-bottom: 0rem;
     text-align: center;
     color: $header-font-color;
-    background: rgb(0, 153, 204) no-repeat center center;
+    background: black no-repeat center center;
     background-size: cover;
 }
 
@@ -411,7 +411,7 @@ ul li {
     font-size: 1.8rem;
     line-height: 1.5em;
     font-weight: 300;
-    font-family: $serif-font;
+    font-family: $sans-font;
     letter-spacing: 0;
 }
 
@@ -488,10 +488,21 @@ a.fn-item.active {
 
 .post-title {
     margin:0;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background: transparent;
+    border-bottom: 1px dotted black;
+    padding: 5px 2px 0 2px;
 }
 
 .post-title a {
     text-decoration: none;
+}
+
+.post-title a.logo-up {
+    font-size: 0.5em;
 }
 
 .post-excerpt p {
