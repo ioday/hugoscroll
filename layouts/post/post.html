@@ -6,7 +6,7 @@
 {{ end }}
 
     <h1 class="post-title">
-        <a class="logo-up" href="{{ .Site.BaseURL}}">
+        <a class="logo-up" href="#">
             {{ if .Site.Params.logo }}
                 {{ range .Site.Data.logolist }}
                     {{ delimit (first 2 (shuffle .)) "" | safeHTML }}
