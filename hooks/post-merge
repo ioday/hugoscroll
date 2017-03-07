@@ -1,0 +1,16 @@
+#!/bin/sh
+echo "---" > $GIT_DIR/data/file_version.yaml
+echo "Name: file_version" >> $GIT_DIR/data/file_version.yaml
+
+CSSVERSION=`md5sum $GIT_DIR/static/css/base.min.css | head -c 6`
+JSVERSION=`md5sum $GIT_DIR/static/js/index.min.js | head -c 6`
+
+echo "css_version: -$CSSVERSION" >> $GIT_DIR/data/file_version.yaml
+echo "js_version: -$JSVERSION" >> $GIT_DIR/data/file_version.yaml
+echo "---" >> $GIT_DIR/data/file_version.yaml
+
+cd $GIT_DIR/static/css
+ln -sf base.min.css base-$CSSVERSION.min.css
+
+cd $GIT_DIR/static/js
+ln -sf index.min.js index-$JSVERSION.min.js
