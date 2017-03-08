@@ -5,8 +5,8 @@ echo "Name: file_version" >> data/file_version.yaml
 CSSVERSION=`md5sum static/css/base.min.css | head -c 6`
 JSVERSION=`md5sum static/js/index.min.js | head -c 6`
 
-echo "css_version: -$CSSVERSION" >> data/file_version.yaml
-echo "js_version: -$JSVERSION" >> data/file_version.yaml
+echo "css_version: $CSSVERSION" >> data/file_version.yaml
+echo "js_version: $JSVERSION" >> data/file_version.yaml
 echo "---" >> data/file_version.yaml
 
 cd static/css
