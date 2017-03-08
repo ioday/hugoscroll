@@ -1,16 +1,15 @@
 #!/bin/sh
-echo "---" > data/file_version.yaml
-echo "Name: file_version" >> data/file_version.yaml
-
 CSSVERSION=`md5sum static/css/base.min.css | head -c 6`
 JSVERSION=`md5sum static/js/index.min.js | head -c 6`
 
+echo "---" > data/file_version.yaml
+echo "Name: file_version" >> data/file_version.yaml
 echo "css_version: $CSSVERSION" >> data/file_version.yaml
 echo "js_version: $JSVERSION" >> data/file_version.yaml
 echo "---" >> data/file_version.yaml
 
 cd static/css
-ln -sf base.min.css base-$CSSVERSION.min.css
+ln -sf base.min.css base-${CSSVERSION}.min.css
 
 cd ../js
-ln -sf index.min.js index-$JSVERSION.min.js
+ln -sf index.min.js index-${JSVERSION}.min.js
