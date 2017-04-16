@@ -7,7 +7,11 @@
 
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    {{ if .IsHome }}
+    <title> {{ .Site.Title }} </title>
+    {{ else }}
     <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+    {{ end }}
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
