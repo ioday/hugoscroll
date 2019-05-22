@@ -98,7 +98,6 @@ var $post = $('.post'),
                 })
             });
         }
-        $('ul li').before('<span class="bult fa fa-asterisk icon-asterisk"></span>')
         $('blockquote p').prepend('<span class="quo icon-quote-left"></span>')
                 .append('<span class="quo icon-quote-right"></span>')
     });
