@@ -32,6 +32,35 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.juan_drop + input {
+  display: none;
+  /* hide the checkboxes */ }
+
+.juan_drop + input + div {
+  display: none; }
+
+.juan_drop + input:checked + div {
+  display: block; }
+
+.juan_drop {
+  display: inline;
+  border-radius: 5px;
+  background-color: #ebec9b; }
+
+.juan_drop::after {
+  content: '\a\a';
+  white-space: pre; }
+
+.entry_name {
+  font-size: 28px; }
+
+.origin {
+  padding-left: 34px;
+  color: #898b8d; }
+
+emphasis {
+  font-weight: 700; }
+
 /* Apply these base styles to all icons */
 .icon-feed, .icon-twitter, .icon-google-plus, .icon-facebook {
   font-family: 'icons';
