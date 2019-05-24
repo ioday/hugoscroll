@@ -330,14 +330,6 @@ div.hw_infs_d, div.labels, span.gram {
   font-weight: normal;
   font-size: 109%; }
 
-.entry_v2 .pron_i {
-  color: #D40218;
-  font-size: 0; }
-
-.entry_v2 .pron_i:hover {
-  color: #FF0000;
-  text-decoration: none; }
-
 /*non-HW variations*/
 .entry_v2 .v_label {
   font-style: italic;
@@ -412,14 +404,6 @@ div.hw_infs_d, div.labels, span.gram {
   font-weight: normal;
   margin-left: 2px;
   font-size: 100%; }
-
-.entry_v2 > .hw_d > .hpron_icon {
-  color: #D40218;
-  font-size: 0;
-  margin-left: 2px; }
-
-.entry_v2 > .hw_d > .hpron_icon:hover {
-  text-decoration: none; }
 
 .entry_v2 > .hw_d > .fl {
   color: darkred;
@@ -1274,14 +1258,6 @@ body {
 
 .table .table .tr .td {
   border: 4px dotted inherit; }
-
-img.fayin {
-  height: 20px;
-  width: 0px;
-  margin-bottom: -4px;
-  margin-left: 2px;
-  margin-right: 1px;
-  display: inline !important; }
 
 img.Media {
   float: right;
