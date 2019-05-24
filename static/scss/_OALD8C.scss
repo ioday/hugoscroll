@@ -1,0 +1,504 @@
+*{
+    word-wrap: break-word!important;
+}
+body{
+    /*font-family: Arial, sans-serif;*/
+}
+.entry{
+    line-height: 1.4em;
+}
+
+/*sound*/
+.ei-g .z_phon-us{
+    color: #7C0009;
+    font-style: italic;
+}
+.ei-g .z_phon-us:after, .ei-g .il:after{
+    content: "\00a0";
+}
+.ei-g:before, .ei-g:after{
+    content: "\00a0";
+}
+
+/*top-g*/
+.top-g{
+    display: block;
+}
+.no-dot-h{
+    color: #032952;
+    font-size: larger;
+    font-weight: bold;
+}
+.block-g{
+    display: block;
+}
+.pos-g > .pos{
+    font-weight: bold;
+}
+.alt{
+    display: block;
+    font-weight: bold;
+    color: #032952;
+}
+.alt .z_a{
+    font-style: italic;
+    color: #828282;
+    font-weight: normal;
+}
+.alt .z{
+    font-weight: normal;
+    color: #000;
+}
+.n-g .alt{
+    display: inline;
+}
+.ifs-g{
+    display: block;
+}
+.il{
+    color: #828282;
+    font-style: italic;
+}
+.if{
+    color: #032952;
+    font-weight: bold;
+}
+.ndv{
+    color: #032952;
+    font-weight: bold;
+}
+.arbd1{
+    font-weight: bold;
+}
+.chn{
+    margin-left: 6px;
+}
+/*sd-g*/
+.sd{
+    display: block;
+    color: #0B5BC4;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 4px;
+    border-bottom: 1px solid #0B5BC4;
+}
+.sd:before{
+    content: "➤\00a0";
+}
+.n-g{
+    display: block;
+}
+.z_n{
+    color: #0B5BC4;
+    font-weight: bold;
+}
+.z_n:after{
+    color: #0B5BC4;
+    font-weight: bold;
+    content: "\00a0";
+}
+.gr{
+    color: #828282;
+}
+.gr > .z_gr_br{
+    color: #000;
+}
+.gr+.def-g:before, .gr+.cf:before, .alt+.gr:before{
+    content: "\00a0";
+}
+.x-g{
+    display: block;
+}
+.x-g > .x > .cl{
+    font-weight: bold;
+}
+.eb{
+    font-weight: bold;
+}
+.cf{
+    color: #0B5BC4;
+    font-weight: bold;
+}
+.cf[display="block"]{
+    display: block;
+}
+.label-g > .g{
+    color: #828282;
+    font-style: italic;
+}
+.label-g > .r{
+    color: #828282;
+    font-style: italic;
+}
+.label-g > .subject{
+    color: #828282;
+    font-style: italic;
+}
+.ab, .sym{
+    color: #032952;
+    font-weight: bold;
+}
+.ab .z_ab, .sym .z_sym{
+    color: #828282;
+    font-style: italic;
+    font-weight: normal;
+}
+.ab .z, .sym .z{
+    font-weight: normal;
+    color: #000;
+}
+.vs-g > .v{
+    color: #032952;
+    font-weight: bold;
+}
+.vs-g > .z_vs-g{
+    color: #828282;
+    font-style: italic;
+}
+.infl{
+    display: block;
+}
+.infl .inflection{
+    font-weight: bold;
+    color: #032952;
+}
+
+/*IDIOMS*/
+/*PHRASAL VERB*/
+.ids-g, .pvs-g{
+    display: block;
+}
+.ids-g .revout, .pvs-g .revout{
+    background-color: #0B5BC4;
+    display: inline-block;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 100%;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+.ids-g .revout:after, .pvs-g .revout:after{
+    content: "\00a0►";
+}
+.ids-g .id-g .id, .pvs-g .pv-g .pv{
+    font-weight: bold;
+    color: #032952;
+}
+.ids-g .id-g, .pvs-g .pv-g{
+    display: block;
+}
+
+.xr-g .revout{
+    background-color: #0B5BC4;
+    display: inline-block;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 100%;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+.xr-g .revout:after{
+    content: "\00a0►";
+}
+
+/*WORD FAMILY*/
+.unbox {
+    display: block;
+    border: 3px solid #D10022;
+    margin: 4px 2px 2px 2px;
+}
+.unbox *{
+    border: 0;
+}
+.unbox .tab {
+    display: table-cell;
+    color: #D10022;
+    font-weight: bold;
+}
+.unbox .tab:before {
+    content: "➞\00a0";
+    padding-left: 2px;
+    color: #D10022;
+    font-weight: bold;
+}
+.unbox .wf-g .wfw{
+    font-weight: bold;
+}
+.unbox .wf-g{
+    display: block;
+}
+.unbox .wf-g .pos-g .pos{
+    font-style: italic;
+    margin-left: 4px;
+    font-weight: normal;
+}
+.unbox > .title{
+    font-weight: bold;
+    display: block;
+}
+.para{
+    display: block;
+}
+.unbox .althead{
+    font-weight: bold;
+    display: block;
+    color: #032952;
+}
+.unbox .subhead{
+    font-weight: bold;
+    color: #032952;
+}
+.langbanksubhead{
+    color: #032952;
+}
+.und .unxh, .xh .z_xh_eb{
+    color: deeppink;
+    font-weight: bold;
+}
+.und .unfm{
+    font-weight: bold;
+}
+/*PATTERNS*/
+.patterns .althead{
+    font-weight: bold;
+    display: block;
+    color: #032952;
+}
+.patterns .para{
+    color: #032952;
+}
+
+/*help*/
+.help{
+    display: block;
+}
+.help .fm{
+    font-weight: bold;
+}
+.gi{
+    font-style: italic;
+}
+
+/*font color*/
+.def-g > .d, .def-g > .ud{
+    color: #000;
+}
+.def-g > .d > .chn, .def-g > .ud > .chn{
+    color: #828282;
+}
+.x-g>.x, .x-g>.unx{
+    color: #000;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+.x-g > .tx{
+    color: #828282;
+    margin-left: 6px;
+    /*display: block;*/
+}
+/*href color*/
+.Ref a{
+    color: #C80021;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*can't change .p-g...*/
+.p-g .pos-g a.pos{
+    display: inline-block;
+    background-color: #C80021;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 3px;
+    line-height: 100%;
+    border-radius: 3px;
+}
+.pos-g[display="block"]{
+    display: block;
+}
+/*table*/
+.table {
+    display: table;
+    border: 3px solid #D10022;
+    margin: 4px 2px 2px 2px;
+}
+.table *{
+    border: 0;
+}
+.table .tr{
+    display: table-row;
+}
+.table .tr .th{
+    display: table-cell;
+    color: #D10022;
+    font-weight: bold;
+}
+.table .tr .th:before{
+    content: "➞\00a0";
+    padding-left: 2px;
+    color: #D10022;
+    font-weight: bold;
+}
+.table .tr .td{
+    display: table-cell;
+}
+.table .table .tr .th:before{
+    content: normal;
+}
+.table .table .tr .th{
+    display: table-cell;
+    color: #000;
+    font-weight: bold;
+    border: 4px dotted inherit;
+}
+.table .table .tr .td{
+    border: 4px dotted inherit;
+}
+
+img.fayin{
+    height: 20px;
+    width: 0px;
+    margin-bottom: -4px;
+    margin-left: 2px;
+    margin-right: 1px;
+    display: inline !important;
+}
+img.Media {
+    float: right;
+    clear: both;
+}
+
+/*symbols*/
+.symbols-coresym{
+    color: #D2792C;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.symbols-small_coresym{
+    color: #D2792C;
+    font-size: xx-small;
+    margin-left: 2px;
+}
+.z_n+.symbols-small_coresym{
+    margin-left: 0;
+}
+.symbols-small_coresym:after{
+    content: "\00a0";
+    color: #D2792C;
+    font-size: xx-small;
+}
+.symbols-xsym{
+    color: #696969;
+    /*font-size: xx-small;*/
+}
+.symbols-xsym:after{
+    content: "\00a0";
+}
+.symbols-drsym{
+    color: #0B5BC4;
+    font-size: xx-small;
+}
+.symbols-drsym:after{
+    content: "\00a0";
+}
+.symbols-xrsym{
+    color: #C80021;
+}
+.symbols-xrsym:after{
+    content: "\00a0";
+    color: #C80021;
+}
+.symbols-xrsym:before{
+    content: "\00a0";
+    color: #C80021;
+}
+.symbols-para_square{
+    color: #0B5BC4;
+}
+.symbols-para_square:after{
+    content: "\00a0";
+}
+.symbols-synsep{
+
+}
+.symbols-awlsym{
+    background-color: #000;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 100%;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+.symbols-coresym+.symbols-awlsym{
+}
+.symbols-synsym, .symbols-helpsym, .symbols-oppsym, .symbols-etymsym, .symbols-notesym{
+    background-color: #0B5BC4;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 100%;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+
+.pracpron{
+    display: none;
+}
+.app-line-through{
+    text-decoration: line-through;
+}
+.app-block{
+    display: block;
+}
+/*e.g. giga- cube*/
+.z_sup{
+    vertical-align: super;
+    font-size: 70%;
+}
+/*e.g. silica nitric acid*/
+.z_sub{
+    vertical-align: sub;
+    font-size: 70%;
+}
+.smart-blank+.z_sup, .smart-blank+.z_sub{
+    margin-left: -.4em;
+}
+/*繁简切换按钮*/
+.simplized-btn, .simplized-btn-active {
+    line-height: 100%;
+    font-size: smaller;
+    font-weight: bold;
+    color: #FFF;
+    padding: 2px 2px;
+    text-decoration: none;
+    margin: auto 4px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.simplized-btn {
+    background-color: #BCBCBC;
+    visibility: hidden;
+}
+.simplized-btn-active {
+    background-color: #000;
+}
+img[xml-symbols-gif="true"]{
+    height: 18px;
+    width: 18px;
+    margin-bottom: -4px;
+}
+img[thumb_resource="thumb"]{
+    max-height: 102px;
+}
+
+button:focus, button:active {
+    border: none;
+    outline: none;
+}
+
+img {
+	outline: none;
+	border: none;
+}
