@@ -2886,7 +2886,8 @@ span.sensenum {
     margin: 1px 2px 10px 2px; } }
 /* ******************* END END END END of image controls END END END END ********************* */
 .pagetitle {
-  background-repeat: repeat-y; }
+  background-repeat: repeat-y;
+  border-top-style: double; }
 
 /* Apply these base styles to all icons */
 .icon-feed, .icon-twitter, .icon-google-plus, .icon-facebook {
