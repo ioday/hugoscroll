@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -218,6 +219,711 @@ nl {
 
 emphasis {
   font-weight: 700; }
+
+body {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word !important;
+  font-family: "Helvetica Neue",Helvetica, Arial,"PingFang SC","Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  line-height: 1.2em; }
+
+.both_text {
+  font-weight: bold; }
+
+span.un_text {
+  font-weight: bold; }
+
+div.text_prons, span.hpron_word, div.fl {
+  display: inline;
+  padding-right: 5px; }
+
+div.d_hidden {
+  display: none; }
+
+div.hw_infs_d, div.labels, span.gram {
+  display: inline; }
+
+#ld_entries_v2_mainh {
+  font-size: larger;
+  font-weight: normal;
+  display: none; }
+
+#ld_entries_v2_others_block {
+  margin-top: 5px; }
+
+#ld_entries_v2_others_block > .o_count {
+  color: #777777;
+  margin-bottom: 4px;
+  margin-top: 0px;
+  font-variant: small-caps;
+  display: none; }
+
+#ld_entries_v2_others_block > .o_list {
+  border: 1px solid #ccc;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  height: 72px;
+  overflow: hidden;
+  overflow-y: auto; }
+
+#ld_entries_v2_others_block > .o_list > li {
+  margin: 0;
+  padding: 0; }
+
+#ld_entries_v2_others_block > .o_list > li > a {
+  padding: 4px 3px 4px 15px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold; }
+
+#ld_entries_v2_others_block > .o_list > li > a.selected:first-child {
+  background-color: #E8F5F6;
+  color: #000; }
+
+#ld_entries_v2_others_block > .o_list > li > a:hover {
+  background-color: #F0F0F0;
+  color: black; }
+
+#ld_entries_v2_others_block > .o_list > li > a > span {
+  font-weight: normal !important; }
+
+#ld_entries_v2_all {
+  padding: 0px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative; }
+
+/*delete save part for GD*/
+#ld_entries_v2_all > .save_faves > .txt {
+  display: none; }
+
+/*utils*/
+.entry_v2 .vfont {
+  display: none; }
+
+/*for GD*/
+/*mw markup overrides*/
+.entry_v2 .mw_spm_aq {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 85%;
+  color: darkolivegreen;
+  text-indent: 3em; }
+
+.entry_v2 .mw_spm_aq:before {
+  content: '—';
+  color: gray; }
+
+@media screen and (max-width: 480px) {
+  .entry_v2 .mw_spm_aq {
+    text-align: left; } }
+/*Dotted line*/
+.entry_v2 .dline {
+  display: none; }
+
+/*non-HW prons*/
+.entry_v2 .pron_w {
+  color: #717274;
+  font-weight: normal;
+  font-size: 109%; }
+
+.entry_v2 .pron_i {
+  color: #D40218;
+  font-size: 140%; }
+
+.entry_v2 .pron_i:hover {
+  color: #FF0000;
+  text-decoration: none; }
+
+/*non-HW variations*/
+.entry_v2 .v_label {
+  font-style: italic;
+  color: #757575; }
+
+.entry_v2 .v_text {
+  font-weight: bold;
+  background: #2d5f7c;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 6px; }
+
+/*non-HW inflections*/
+.entry_v2 .i_label {
+  font-style: italic;
+  color: #757575; }
+
+.entry_v2 .i_text {
+  font-weight: bold; }
+
+/*single word entry resets*/
+.entry_v2 p {
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-weight: normal; }
+
+.entry_v2 a {
+  color: #1122CC;
+  text-decoration: none; }
+
+.entry_v2 a:hover {
+  text-decoration: underline; }
+
+/*desktop: headword*/
+.entry_v2 > .hw_d {
+  margin: 0px 0px 0.5em 0px;
+  background-color: #BBC7CC;
+  padding: 4px 2px 4px 5px;
+  position: relative;
+  border-top: 1px solid #2d5f7c;
+  border-bottom: 1px solid #2d5f7c; }
+
+.entry_v2 > .hw_d.hw_0 {
+  /* margin: -10px 0px 1em 0px; */
+  /* border-top: 1px solid; */
+  /* border-bottom: 1px solid; */ }
+
+.entry_v2 > .hw_d.hw_0.hw_wod {
+  margin: 0;
+  background-color: transparent;
+  padding: 10px 0px; }
+
+.entry_v2 > .hw_d > * {
+  position: relative;
+  vertical-align: middle; }
+
+.entry_v2 > .hw_d > .hw_txt {
+  font-weight: bold; }
+
+.entry_v2 > .hw_d > .hsl {
+  margin-left: 6px;
+  font-style: italic; }
+
+.entry_v2 > .hw_d > .hpron_label_a {
+  margin-left: 7px; }
+
+.entry_v2 > .hw_d > .hpron_label_b {
+  margin-left: 7px; }
+
+.entry_v2 > .hw_d > .hpron_word {
+  color: #525157;
+  font-weight: normal;
+  margin-left: 2px;
+  font-size: 100%; }
+
+.entry_v2 > .hw_d > .hpron_icon {
+  color: #D40218;
+  font-size: 150%;
+  margin-left: 2px; }
+
+.entry_v2 > .hw_d > .hpron_icon:hover {
+  text-decoration: none; }
+
+.entry_v2 > .hw_d > .fl {
+  color: darkred;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 2px; }
+
+/*desktop: headword variations*/
+.entry_v2 > .hw_vars_d {
+  margin-bottom: .6em; }
+
+/*desktop: headword inflections*/
+.entry_v2 > .hw_infs_d {
+  margin-bottom: .6em; }
+
+/*view: entry level labels*/
+.entry_v2 > .labels {
+  margin: 0; }
+
+.entry_v2 > .labels > .lb {
+  font-style: italic; }
+
+.entry_v2 > .labels > .gram > .gram_internal {
+  color: #757575; }
+
+.entry_v2 > .labels > .sl {
+  font-style: italic; }
+
+/*view: phrasal verbs*/
+.entry_v2 .pva {
+  font-weight: bold; }
+
+/*view: synonym paragraphs*/
+.entry_v2 .synpar > .synpar_part {
+  margin-bottom: 5px; }
+
+.entry_v2 .synpar > .synpar_part:last-child {
+  margin-bottom: 0; }
+
+.entry_v2 .synpar > .synpar_part > .synpar_w {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  line-height: 1; }
+
+.entry_v2 .synpar > .synpar_part > *:last-child {
+  margin-bottom: 0; }
+
+/*view: supplementary notes*/
+.entry_v2 .snotes {
+  margin-bottom: .5em;
+  overflow: hidden; }
+
+.entry_v2 .snotes > * {
+  margin-bottom: 0.4em; }
+
+.entry_v2 .snotes > *:last-child {
+  margin-bottom: 0; }
+
+.entry_v2 .snotes > .snote_text > .snote_link {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  line-height: 1; }
+
+.entry_v2 .snotes > .snote_text > .snote_link sup {
+  font-size: 50%; }
+
+/*view: supplementary noteboxes*/
+.entry_v2 .snotebox {
+  border: 1px solid #2d5f7c;
+  padding: 0.8em;
+  margin-bottom: .5em;
+  overflow: hidden;
+  background-color: #E7F5F5; }
+
+.entry_v2 .snotebox > .snotebox_text {
+  text-align: justify; }
+
+.entry_v2 .snotebox > .snotebox_text > .snote_link {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  line-height: 1; }
+
+.entry_v2 .snotebox > .snotebox_text > .snote_link sup {
+  font-size: 50%; }
+
+/*view: art*/
+.entry_v2 .arts {
+  margin-bottom: .5em; }
+
+.entry_v2 .arts > .art {
+  text-align: center;
+  margin-bottom: 4px; }
+
+.entry_v2 .arts > .art:last-child {
+  margin-bottom: 0; }
+
+.entry_v2 .arts > .art > img {
+  border: 1px solid #ddd;
+  padding: 0; }
+
+/*view: usage note*/
+/*view: sense blocks*/
+.entry_v2 .sblocks {
+  margin-bottom: .5em; }
+
+.entry_v2 .sblocks > .sblock {
+  width: 100%;
+  margin: 5px 0px 5px 0px; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c {
+  margin-bottom: 4px; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c:last-child {
+  margin-bottom: 0; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .sn_block_num {
+  float: left;
+  font-weight: bold;
+  color: #c00; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sblock_labels > .slb {
+  font-style: italic; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sblock_labels > .ssla {
+  font-style: italic; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sblock_labels > .sgram > .sgram_internal {
+  color: #757575; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sblock_labels > .bnote {
+  font-weight: bold;
+  font-style: italic; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt {
+  margin-bottom: 4px;
+  overflow: hidden; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt:last-child {
+  margin-bottom: 0; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .sn_letter {
+  font-weight: bold;
+  float: left;
+  color: #c00; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .sd {
+  font-style: italic; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .bnote {
+  font-weight: bold;
+  font-style: italic;
+  color: #000; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .slb {
+  font-style: italic; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .sgram > .sgram_internal {
+  color: #757575; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .ssla {
+  font-style: italic; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .def_text {
+  margin-bottom: 2px;
+  font-size: 103%; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .def_text > .bc {
+  font-weight: bold; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .def_labels {
+  margin-top: 5px;
+  padding-left: 14px; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .def_labels > .wsgram > .wsgram_internal {
+  color: #757575; }
+
+.entry_v2 .sblocks > .sblock > .sblock_c > .scnt > .sense > .def_labels > .sl {
+  font-style: italic; }
+
+/*view: verbal illustration*/
+.entry_v2 .vis_w {
+  padding-left: 0;
+  padding-bottom: 5px;
+  padding-right: 8px; }
+
+.entry_v2 .vis_w > .vis {
+  /* list-style-position: inside; */
+  /* list-style-position:outside; */
+  overflow: hidden; }
+
+.entry_v2 .vis_w > .vis > .vi {
+  padding-left: 0px;
+  /*color:#5FB68C;*/
+  color: #737373; }
+
+.entry_v2 .vis_w > .vis > .vi::before {
+  content: "●";
+  color: #5FB68C;
+  display: none;
+  font-size: 60%; }
+
+.entry_v2 .vis_w > .vis > .vi > .vi_content {
+  color: #000;
+  display: block; }
+
+/*view: dros*/
+.entry_v2 > .dros {
+  margin-bottom: .5em; }
+
+.entry_v2 > .dros > .dro {
+  margin-bottom: 0.8em;
+  padding-left: 0.4em; }
+
+.entry_v2 > .dros > .dro:last-child {
+  margin-bottom: 0; }
+
+.entry_v2 > .dros > .dro > .dro_line {
+  margin-left: -0.4em; }
+
+.entry_v2 > .dros > .dro > .dro_line > * {
+  vertical-align: middle; }
+
+.entry_v2 > .dros > .dro > .dro_line > .dre {
+  display: inline;
+  font-weight: bold;
+  padding: 2px 6px;
+  margin: 0;
+  font-size: inherit;
+  color: white;
+  background: #2d5f7c;
+  border-radius: 10px; }
+
+.entry_v2 > .dros > .dro > .dro_line > .gram > .gram_internal {
+  color: #757575; }
+
+.entry_v2 > .dros > .dro > .dro_line > .sl {
+  font-style: italic; }
+
+.entry_v2 > .dros > .dro > .dro_line > .rsl {
+  font-style: italic; }
+
+.entry_v2 > .dros > .dro > .dxs {
+  margin-top: 0.3em;
+  display: block; }
+
+/*view: uros*/
+.entry_v2 > .uros {
+  margin-bottom: .5em; }
+
+.entry_v2 > .uros > .uro {
+  margin-bottom: 0.4em;
+  padding-left: 0.8em; }
+
+.entry_v2 > .uros > .uro:last-child {
+  margin-bottom: 0; }
+
+.entry_v2 > .uros > .uro > .uro_line {
+  margin-left: -0.8em; }
+
+.entry_v2 > .uros > .uro > .uro_line > * {
+  vertical-align: middle; }
+
+.entry_v2 > .uros > .uro > .uro_line > .ure {
+  display: inline;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  margin-right: 0.5em; }
+
+.entry_v2 > .uros > .uro > .uro_line > .gram > .gram_internal {
+  color: #757575; }
+
+.entry_v2 > .uros > .uro > .uro_line > .lb {
+  font-style: italic; }
+
+.entry_v2 > .uros > .uro > .uro_line > .sl {
+  font-style: italic; }
+
+.entry_v2 > .uros > .uro > .uro_line > .fl {
+  color: #717274;
+  font-style: italic;
+  font-weight: bold; }
+
+.entry_v2 > .uros > .uro > .uro_def {
+  margin: 0.5em 0 0 0; }
+
+.entry_v2 > .uros > .uro > .uro_def:first-child {
+  margin-top: 0; }
+
+.entry_v2 > .uros > .uro > .uro_def > *:first-child {
+  margin-top: 0; }
+
+/*view: inline synonyms*/
+.entry_v2 .isyns > .bc {
+  font-weight: bold; }
+
+.entry_v2 .isyns > .isyn_link {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  line-height: 1; }
+
+.entry_v2 .isyns > .isyn_link sup {
+  font-size: 50%; }
+
+/*view: cognate cross entries*/
+.entry_v2 > .cxs {
+  margin-top: .5em;
+  margin-bottom: .3em; }
+
+.entry_v2 > .cxs .cx_link {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  line-height: 1; }
+
+.entry_v2 > .cxs .cx_link sup {
+  font-size: 50%; }
+
+.entry_v2 > .cxs .cl {
+  font-style: italic; }
+
+/*view: directional cross entries*/
+.entry_v2 .dxs.dxs_nl {
+  margin-bottom: .5em; }
+
+.entry_v2 .dxs .dx .dx_link {
+  font-variant: normal;
+  font-size: 1.1em;
+  line-height: 1; }
+
+.entry_v2 .dxs .dx .dx_link sup {
+  font-size: 50%; }
+
+.entry_v2 .dxs .dx .dx_span {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  line-height: 1; }
+
+.entry_v2 .dxs .dx .dx_span sup {
+  font-size: 50%; }
+
+.entry_v2 .dxs .dx .dx_ab {
+  font-style: italic; }
+
+.entry_v2 .dxs .dx .dx_tag {
+  font-style: italic; }
+
+/*view: cas*/
+.entry_v2 .cas {
+  margin-top: 6px; }
+
+.entry_v2 .cas > .ca_prefix {
+  font-style: italic; }
+
+.entry_v2 .cas > .ca_text {
+  font-style: italic; }
+
+/*view: usage paragraphs*/
+.entry_v2 .usage_par > .ud_text {
+  text-align: justify; }
+
+.entry_v2 .usage_par > * {
+  margin-bottom: 0.3em; }
+
+.entry_v2 .usage_par > *:last-child {
+  margin-bottom: 0; }
+
+/*view: synref*/
+.entry_v2 .synref_h1 {
+  font-weight: bold; }
+
+.entry_v2 .synref_link {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  line-height: 1; }
+
+.entry_v2 .synref_link sup {
+  font-size: 50%; }
+
+/*view: usageref*/
+.entry_v2 .usageref_block > .usageref_h1 {
+  font-weight: bold; }
+
+.entry_v2 .usageref_block > .usageref_link {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  line-height: 1; }
+
+.entry_v2 .usageref_block > .usageref_link sup {
+  font-size: 50%; }
+
+/***************** 2016/2/6 ******************/
+/* 此处修改例句颜色 */
+.entry_v2 .vis_w > .vis > .vi > .vi_content {
+  color: #3c3c3c;
+  /* #3399FF; #0199FF; #3377FF; #398597; #1E90FF;*/
+  margin-bottom: 5px;
+  margin-top: 5px; }
+
+/* 例句中的短语是否加粗、倾斜 */
+.mw_spm_phrase {
+  font-style: normal;
+  text-decoration: underline; }
+
+/* 关闭无关内容的显示 */
+.save_faves {
+  display: none; }
+
+.vi_more {
+  display: none; }
+
+.jumpcontent {
+  display: none; }
+
+/***************** 2016/2/15 ******************/
+/* 分割线 */
+.sms {
+  padding-top: 12px;
+  border-top: 1px dashed #ccc;
+  clear: both; }
+
+/* 要跳转到的主词条 */
+.realmainentry {
+  font-weight: bold; }
+
+.xml-hide-o_list {
+  display: none; }
+
+.o_count {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE/Edge */
+  user-select: none;
+  /* non-prefixed version, currently not supported by any browser */ }
+
+em {
+  text-decoration: underline;
+  font-style: normal; }
+
+ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 18px; }
+
+img {
+  max-width: 100%; }
+
+.usage_par, .sense .usage_par, .synpar {
+  position: relative;
+  margin: 2em 0.9em 1em 0;
+  padding: 1em .7em .7em;
+  border: 1px solid #2d5f7c;
+  border-radius: .2em;
+  background-color: #E7F5F5;
+  text-align: justify; }
+
+.syn_par_h,
+.usage_par_h {
+  position: absolute;
+  height: 1.4em;
+  left: 1em;
+  top: -.7em;
+  padding: 0 1em;
+  border-radius: .7em;
+  background: #2d5f7c;
+  font-size: 85%;
+  line-height: 1.4em;
+  color: white;
+  font-weight: 700; }
+
+.usage_par_h .mw_zh, .syn_par_h .mw_zh {
+  margin-left: .3em;
+  font-size: 85%;
+  color: white; }
+
+.vi_content .mw_spm_aq .mw_zh {
+  margin-left: .3em;
+  font-size: 85%;
+  color: black;
+  display: inline; }
+
+.mw_zh {
+  font-size: 90%;
+  color: #2d5f7c;
+  margin-left: 3px;
+  font-weight: bold; }
+
+/* 中文例句 */
+.vi_content .mw_zh {
+  font-size: 90%;
+  display: block;
+  margin-left: 0;
+  font-weight: normal;
+  color: #3c3c3c; }
 
 /* Apply these base styles to all icons */
 .icon-feed, .icon-twitter, .icon-google-plus, .icon-facebook {
