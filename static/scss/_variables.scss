@@ -18,9 +18,9 @@ $third-color:       #769cac;
 $link-color:        #9FD067;
 $hover-color:       darken($link-color, 5%);
 
-$sans-font:         "Helvetica Neue","Source Sans Pro","Noto Sans",source-sans-pro,"Segoe UI",Helvetica,Arial,DengXian,"Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Source Han Sans","Microsoft Yahei",STHeiti,STXihei,"Heiti SC",Hei,"Hiragino Sans GB",SimHei,sans-serif;
-$serif-font:        'Times New Roman', serif;
-$monospace-font : "Source Code Pro",source-code-pro,Monaco,Consolas,Menlo,'Lucida Console',monospace,sans-serif;
+$sans-font:         "SF Pro Text","SF Pro Icons",Segoe UI,SegoeUI,"Helvetica Neue","Helvetica","Source Sans Pro","Noto Sans","SF Pro SC","PingFang SC","Source Han Sans CN","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans",DengXian,"Microsoft Yahei",sans-serif;
+$serif-font:        Palatino,Palatino Linotype,Georgia,Times,serif;
+$monospace-font :   "Source Code Pro",Monaco,Consolas,Menlo,'Lucida Console',monospace;
 
 $header-font-color: $gray-lightest;
 $primary-font-color: $gray-darkest;
