@@ -9,7 +9,7 @@ echo "js_version: $JSVERSION" >> data/file_version.yaml
 echo "---" >> data/file_version.yaml
 
 cd static/css
-ln -sf base.min.css base-${CSSVERSION}.min.css
+cp -f base.min.css base-${CSSVERSION}.min.css
 
 cd ../js
-ln -sf index.min.js index-${JSVERSION}.min.js
+cp -f index.min.js index-${JSVERSION}.min.js
